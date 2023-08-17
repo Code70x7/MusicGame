@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #9ff3d0;
+    overflow: visible;
+}
+.best {
+    margin: 30px 0; 
+    padding: 0px; 
+    color: blue;
+}
+img {
+    max-height: 80%;
+    max-width: 80%;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.user-input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.check-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
