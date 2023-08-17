@@ -20,7 +20,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     transform: scale(1.1);
     transition: transform 330ms ease-in-out;
 }
-img {
+
+.startImg {
     border: black solid 2px;
     max-height: 70vh;
     max-width: 90%;
@@ -41,6 +42,28 @@ img {
     margin-top: 10px;
     
    
+}
+.eachNote{
+    font-size:1.2rem;
+}
+.explain1{
+    width: auto;
+    height: 500px;
+}
+.explain2{
+    width: auto;
+    height: 450px;
+}
+@media (max-width: 768px) {
+    .explain1{
+        max-width: 100%;
+        max-height: auto;
+        
+    } 
+    .explain2 {
+        max-width: 100%;
+        max-height: auto; /* Adjusted maximum width for mobile devices */
+    }
 }
 .start {
     font-size: 1.3rem;
