@@ -16,6 +16,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     padding: 0px; 
     color: rgb(1, 1, 17);
 }
+.best:hover {
+    transform: scale(1.1);
+    transition: transform 330ms ease-in-out;
+}
 img {
     border: black solid 2px;
     max-height: 80%;
@@ -24,16 +28,24 @@ img {
     border-radius: 10px;
     box-shadow:10px 10px 10px 2px rgb(19, 18, 18);
 }
-
-.user-input {
-    padding: 10px;
-    font-size: 16px;
-    margin-bottom: 10px;
+.disappearing-div {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    display: block;
+    text-align: center;
+    padding: 0px 20px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 20px;
+    
+   
 }
 
-.check-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 10px;
-}
-
+.border-button {
+    outline: dotted 5px rgba(83, 79, 79, 0.5);
+    transition: outline 0.6s linear;
+    margin: 0.5em; /* Increased margin since the outline expands outside the element */
+  }
+  
+  .border-button:hover { outline-width: 10px; }
