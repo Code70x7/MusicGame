@@ -11,7 +11,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     align-items: center; 
 }
 .best {
-    margin: 30px 0px 5px 0px; 
+    margin: margin: 30px 0 5px;; 
     padding: 0px; 
     color: rgb(1, 1, 17);
 }
