@@ -12,7 +12,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 .best {
     text-align: center;
-    margin: margin: 30px 0px; 
+    margin: 30px 0px; 
     padding: 0px; 
     color: rgb(1, 1, 17);
 }
@@ -23,7 +23,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .startImg {
     border: black solid 2px;
-    max-height: 70vh;
+    max-height: 100vh;
     max-width: 90%;
     margin: 20px;
     border-radius: 10px;
