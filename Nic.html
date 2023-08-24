@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>TEST MUSIC GAME</title>
+    <style>
+        #Treble {
+            position: absolute;
+            top: 30px;
+            left: 0px;
+            width: 1250px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <button id="testPlay" type="button" onclick="noteFeeder(noteRandomizer(5), 2000)">TEST PLAY</button>
+    <button type="button" onclick="testStaff()">TEST NOTE</button>
+    <button type="button" onclick="playGame()">TEST PLAY</button>
+    <img id="Treble" src="images/Treble.png">
+    <div id="staff"></div>
+    <script src="js/music-game.js"></script>
+</body>
+
+</html>
