@@ -6,18 +6,21 @@ body {
     overflow-x: hidden;
     box-sizing: border-box;
 }
-#center{
+
+#center {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
+
 .best {
     text-align: center;
-    margin: 30px 0px; 
-    padding: 0px; 
+    margin: 30px 0px;
+    padding: 0px;
     color: rgb(1, 1, 17);
 }
+
 .best:hover {
     transform: scale(1.1);
     transition: transform 330ms ease-in-out;
@@ -25,11 +28,13 @@ body {
 
 .startImg {
     border: black solid 2px;
-    max-width: 1250px; /* Set a fixed maximum width */
+    max-width: 1250px;
+    /* Set a fixed maximum width */
     margin: 20px;
     border-radius: 10px;
     box-shadow: 10px 10px 10px 2px rgb(19, 18, 18);
 }
+
 .disappearing-div {
     width: 170px;
     height: 120px;
@@ -40,16 +45,18 @@ body {
     cursor: pointer;
     border-radius: 15px;
     margin-top: 10px;
-    
-   
+
+
 }
-.eachNote{
-    font-size:1.2rem;
+
+.eachNote {
+    font-size: 1.2rem;
 }
-.explain1{
+
+.explain1 {
     max-width: 100%;
     max-height: auto;
-} 
+}
 
 .explain2 {
     max-width: 90%;
@@ -58,34 +65,62 @@ body {
 
 }
 
-.base-timer__svg {
-    transform: scaleX(-1); /* Flips the timer clockwise */
-    width: 150px; /* Adjust the width to make the timer bigger */
+/* .border-button {
+    outline: dotted 5px rgba(83, 79, 79, 0.5);
+    transition: outline 0.6s linear;
+    margin: 0.5em;
+    /* Increased margin since the outline expands outside the element
+}
+
+.border-button:hover {
+    outline-width: 10px;
+}*/
+
+*/ .base-timer__svg {
+    transform: scaleX(-1);
+    /* Flips the timer clockwise */
+    width: 150px;
+    /* Adjust the width to make the timer bigger */
 }
 
 /* Increase the font size of the timer label */
 .base-timer__label {
-    font-size: 24px; 
-    
+    font-size: 24px;
+}
+
+/* .border-button {
+        outline: dotted 5px rgba(83, 79, 79, 0.5);
+        transition: outline 0.6s linear;
+        margin: 0.5em;
+     Increased margin since the outline expands outside the element */
 @media (max-width: 768px) {
-    .explain1{
+    .explain1 {
         max-width: 100%;
         max-height: auto;
-        
-    } 
+
+    }
+
     .explain2 {
         max-width: 100%;
-        max-height: auto; /* Adjusted maximum width for mobile devices */
+        max-height: auto;
+        /* Adjusted maximum width for mobile devices */
     }
 }
+
 .start {
     font-size: 1.3rem;
 }
+
+/* 
 .border-button {
     outline: dotted 5px rgba(83, 79, 79, 0.5);
     transition: outline 0.6s linear;
-    margin: 0.5em; /* Increased margin since the outline expands outside the element */
-  }
-  
-  .border-button:hover { outline-width: 10px; }
+    margin: 0.5em;
+    /* Increased margin since the outline expands outside the element */
+}
 
+.border-button:hover {
+    outline-width: 10px;
+}
+
+*/

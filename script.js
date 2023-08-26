@@ -13,14 +13,14 @@ let score = 0; // Player score
 
 // Note map indicating vertical location on page
 const noteMap = new Map([
-  ["c1", "296px"],
-  ["b", "332px"],
-  ["a", "388px"],
-  ["g", "444px"],
-  ["f", "488px"],
-  ["e", "532px"],
-  ["d", "576px"],
-  ["c2", "612px"],
+  ["c1", "410px"],
+  ["b", "440px"],
+  ["a", "510px"],
+  ["g", "550px"],
+  ["f", "600px"],
+  ["e", "635px"],
+  ["d", "690px"],
+  ["c2", "750px"],
 ]);
 
 // Image source map
@@ -82,7 +82,7 @@ document.getElementById("timer").innerHTML = `
     <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
         <g class="base-timer__circle">
         <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45"></circle>
-        <path>
+        <path
             id="base-timer-path-remaining"
             stroke-dasharray="283"
             class="base-timer__path-remaining ${remainingPathColor}"
@@ -92,7 +92,7 @@ document.getElementById("timer").innerHTML = `
             a 45,45 0 1,0 90,0
             a 45,45 0 1,0 -90,0
             "
-        </path>
+        ></path>
         </g>
     </svg>
     <span id="base-timer-label" class="base-timer__label">${formatTime(
@@ -268,12 +268,11 @@ function playGame() {
   document.getElementById("body").addEventListener("keydown", (event) => {
     console.log(matchSeq); // Debugging code; to be deleted
 
-    const audioElement = document.getElementById(audioMap.get(matchSeq[0]));
-    audioElement.volume = 0.1; // Adjust the volume here
-    audioElement.play();
-
     if (event.key == matchSeq[0]) {
       document.getElementById(audioMap.get(matchSeq[0])).play();
+      const audioElement = document.getElementById(audioMap.get(matchSeq[0]));
+      audioElement.volume = 0.1; // Adjust the volume here
+      audioElement.play();
       document.getElementById("staff").firstElementChild.remove();
       matchSeq.shift();
       console.log(matchSeq); // Debugging code; to be deleted
