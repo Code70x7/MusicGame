@@ -66,6 +66,7 @@ body {
 /* Increase the font size of the timer label */
 .base-timer__label {
     font-size: 24px; 
+    
 @media (max-width: 768px) {
     .explain1{
         max-width: 100%;
