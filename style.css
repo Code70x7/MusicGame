@@ -45,8 +45,6 @@ body {
     cursor: pointer;
     border-radius: 15px;
     margin-top: 10px;
-
-
 }
 
 .eachNote {
@@ -62,37 +60,83 @@ body {
     max-width: 90%;
     max-height: auto;
     margin-left: 60px;
-
 }
 
-/* .border-button {
+/* Increase the font size of the timer label */
+.start {
+    font-size: 1.3rem;
+}
+
+.border-button {
     outline: dotted 5px rgba(83, 79, 79, 0.5);
     transition: outline 0.6s linear;
     margin: 0.5em;
-    /* Increased margin since the outline expands outside the element
 }
 
 .border-button:hover {
     outline-width: 10px;
-}*/
+}
 
-*/ .base-timer__svg {
-    transform: scaleX(-1);
-    /* Flips the timer clockwise */
+.base-timer {
+    position: relative;
     width: 150px;
-    /* Adjust the width to make the timer bigger */
+    height: 150px;
 }
 
-/* Increase the font size of the timer label */
+.base-timersvg {
+    transform: scaleX(-1);
+}
+
+.base-timer__circle {
+    fill: none;
+    stroke: none;
+}
+
+.base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: grey;
+}
+
+.base-timer__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+    color: green;
+}
+
+.base-timer__path-remaining.orange {
+    color: yellow;
+}
+
+.base-timer__path-remaining.red {
+    color: red;
+}
+
 .base-timer__label {
-    font-size: 24px;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
 }
 
-/* .border-button {
-        outline: dotted 5px rgba(83, 79, 79, 0.5);
-        transition: outline 0.6s linear;
-        margin: 0.5em;
-     Increased margin since the outline expands outside the element */
+#score {
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    background-color: lightblue;
+}
+
 @media (max-width: 768px) {
     .explain1 {
         max-width: 100%;
@@ -102,25 +146,6 @@ body {
 
     .explain2 {
         max-width: 100%;
-        max-height: auto;
-        /* Adjusted maximum width for mobile devices */
+        max-height: auto;/ Adjusted maximum width for mobile devices /
     }
 }
-
-.start {
-    font-size: 1.3rem;
-}
-
-/* 
-.border-button {
-    outline: dotted 5px rgba(83, 79, 79, 0.5);
-    transition: outline 0.6s linear;
-    margin: 0.5em;
-    /* Increased margin since the outline expands outside the element */
-}
-
-.border-button:hover {
-    outline-width: 10px;
-}
-
-*/
