@@ -44,7 +44,15 @@ body {
 .eachNote{
     font-size:1.2rem;
 }
-.explain1, .explain2 {
+.explain1{
+    max-width: 100%;
+    max-height: auto;
+} 
+
+.explain2 {
+    max-width: 90%;
+    max-height: auto;
+    margin-left: 30px;
     
 }
 }
